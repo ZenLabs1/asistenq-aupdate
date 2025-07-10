@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>gakjelas-1.0.0</title>
+</head>
+<body>
+  <h1>Selamat datang di App!</h1>
+  <p>Versi aplikasi: <span id="version"></span></p>
+
+  <script>
+    const { version } = require('electron').remote.app;
+    document.getElementById('version').innerText = version;
+  </script>
+</body>
+</html>
